@@ -35,17 +35,17 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
 }
 
 Task.propTypes = {
-    /** Composition of the task */
+    /** Composition of the Task */
     task: PropTypes.shape({
-    /** Id of the task */
+    /** Id of the Task */
     id: PropTypes.string.isRequired,
-    /** Title of the task */
+    /** Title of the Task */
        title: PropTypes.string.isRequired,
-    /** Current state of the task */
+    /** Current state of the Task */
        state: PropTypes.string.isRequired,
     }),
-    /** Event to change the task to archived */
+    /** Event to change the Task to archived */
     onArchiveTask: PropTypes.func,
-    /** Event to change the task to pinned */
+    /** Event to change the Task to pinned */
      onPinTask: PropTypes.func,
 };

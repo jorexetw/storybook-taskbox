@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Task from './../task/Task';
+import Task from '../Task/Task';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { updateTaskState } from '../../lib/store';
@@ -61,9 +61,9 @@ PureTaskList.propTypes = {
      loading: PropTypes.bool,
      /** The list of tasks */
      tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
-     /** Event to change the task to pinned */
+     /** Event to change the Task to pinned */
      onPinTask: PropTypes.func,
-     /** Event to change the task to archived */
+     /** Event to change the Task to archived */
      onArchiveTask: PropTypes.func,
 };
 
